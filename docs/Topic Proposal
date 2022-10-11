@@ -1,0 +1,6 @@
+Topic #1: Ticket price predictor
+The ticket price predictor is a web app that would grab ticket prices for a particular event across all ticket websites and give you the percentage/certainty of a particular ticket being the best deal you will get at the time of purchase. Using data from ticket website APIs such as Ticketmaster, Stubhub, and Seatgeek, the aim of this project would be to find the user the best seats that they can while also giving them confidence at the time of purchase that they got the best deal on those particular tickets.
+
+
+Topic #2: Workout tracker
+The workout tracker is a web application that enables fitness enthusiasts to track their fitness routine and motivates them to become their best selves. Users can input the details of their workouts and set goals that they’d want to achieve. Some of other features we brainstormed include planning out workouts for the upcoming week, logging workout results, and keeping track of workout progress. We are planning to use the wger Workout Manager API and the MyFitnessPal API.
