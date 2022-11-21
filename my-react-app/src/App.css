@@ -18,12 +18,12 @@ label{
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 15px;
+	margin-top: 15px;
 }
 
 input{
-	margin: 0.5rem 0;
 	padding: 1rem;
-	width: 300px;
+	width: 310px;
 	border-radius: 10px;
 	color: black;
 }
@@ -31,10 +31,24 @@ input{
 button{
 	border: none;
 	background-color: #43A98C;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 10px;
 	margin-top: 80px;
 	color: white;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 15px;
+	width: 350px;
+}
+
+.secondaryButton{
+	border: 2px solid #C9C8C8;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+	margin-top: 15px;
+	color: #C9C8C8;
+	width: 350px;
 }
 
 .link-button{
