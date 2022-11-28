@@ -1,21 +1,18 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import React, { useState } from "react";
-import { Login } from './components/Login';
-import { Register } from './components/Register';
+import Login from './components/Login';
+import Register from './components/Register';
 
-function App() {
-
+export default function App() {
 	return (
-		<div className="App">
-			<Router>
+		<BrowserRouter>
+			<div className="App">
 				<Routes>
-					<Route path='/Login' element={<Login />} />
-					<Route path='/Register' element={<Register />} />
-				</Routes>
-			</Router>
-		</div>
+					<Route path='/login' element={<Login />} />
+			 		<Route path='/register' element={<Register />} />
+				</Routes> 
+			</div>
+		</BrowserRouter>
 	);
 }
-
-export default App;

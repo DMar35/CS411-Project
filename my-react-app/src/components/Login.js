@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-export const Login = (props) => {
+
+const Login = (props) => {
 	const [email, setEmail] = useState('');
 	const [pass, setPass] = useState('');
 	const handleSubmit = (e) => {
@@ -18,13 +19,14 @@ export const Login = (props) => {
 				<button type='submit'>Login</button>
 				<button className='secondaryButton' type='submit'>Sign in with Google</button>
 			</form>
-			{/*<div>Don't have an account?
+			{/* <div>Don't have an account?
 				<button className="link-button" onClick={() => props.onFormSwitch('Register')}>Sign Up</button>
-			</div>*/}
-			<Link to="./components/Register" variant="body2">
+			</div> */}
+			<Link to="/register" variant="body2">
 				Not have an account ? Sign up here
 			</Link>
 		</div>
 	)
 }
 
+export default Login;
