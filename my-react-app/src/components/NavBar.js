@@ -2,8 +2,7 @@ import "./styles.css"
 import React from "react";
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Button } from 'reactstrap'; 
-import Container from 'react-bootstrap/Container';
+
 
 const NavBar = () => {
     return (
