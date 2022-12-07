@@ -10,17 +10,43 @@ li {
     width: 500px;
 }
 
-.main{
+.main-login{
+	text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 30px;
+	margin-top: 15px;
+    color: black;
+}
+
+.main-home{
 	text-align: center;
 	padding: 0.25rem 0;
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 50px;
-	margin-top: 15px;
-    color: black;
+    color: white;
 }
 
-.navbar{
-    margin-top: 0px;
-    color: green;
+.description{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: grey;
+}
+
+.description-home{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: white;
 }

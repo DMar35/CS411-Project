@@ -28,9 +28,9 @@ input{
 	color: black;
 }
 
-button{
+.button{
 	border: none;
-	background-color: #43A98C;
+	background-color: #A5D5A7;
 	padding: 10px;
 	border-radius: 10px;
 	margin-top: 80px;
@@ -38,7 +38,7 @@ button{
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 15px;
-	width: 350px;
+	width: 310px;
 }
 
 .secondaryButton{

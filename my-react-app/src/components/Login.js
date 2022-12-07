@@ -48,11 +48,13 @@ const Login = (props) => {
 	<div>
 		<div className="auth-form-container">
 			<form className="login-form" onSubmit={handleSubmit}>
+				<span className="main-login">Hello Again</span>
+				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
 				<label for='email'>Email</label>
 				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
-				<button type='submit'>Login</button>
+				<button type='submit' className='button'>Login</button>
 				<div id="signInDiv"></div>
 				{
 					Object.keys(user).length != 0 &&

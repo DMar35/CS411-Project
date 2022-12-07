@@ -14,6 +14,8 @@ const Register = (props) => {
 	return (
 		<div className="auth-form-container">
 			<form className="register-form" onSubmit={handleSubmit}>
+				<span className="main-login">Create an Account</span>
+				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
 				<label for='first name'>First Name</label>
 				<input value={firstName} onChange={(e) => setFirstName(e.target.value)} name='First Name' id='name' placeholder='First Name' />
 				<label for='last name'>Last Name</label>
@@ -22,7 +24,7 @@ const Register = (props) => {
 				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
-				<button type='submit'>Login</button>
+				<button type='submit' className='button'>Register</button>
 			</form>
 			{/* <p>Already have an account?</p><button onClick={() => props.onFormSwitch('login')}>Login</button> */}
 			<Link to="/login" variant="body2">
