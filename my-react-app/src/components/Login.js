@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import jwt_decode from "jwt-decode"
 import { Link } from 'react-router-dom';
 import "./styles.css"
+import NavBar from './NavBar';
 
 const client_id = '363934785082-5t6e6q3k2g9k1ntgqca39j1osvuqlr28.apps.googleusercontent.com';
 
@@ -65,9 +66,6 @@ const Login = (props) => {
 				}
 
 			</form>
-			{/* <div>Don't have an account?
-				<button className="link-button" onClick={() => props.onFormSwitch('Register')}>Sign Up</button>
-			</div> */}
 			<Link to="/register" variant="body2">
 				Not have an account ? Sign up here
 			</Link>
