@@ -4,10 +4,11 @@
 }
 
 li {
-    padding-right: 650px;
-    padding-top: 25px;
+    padding-top: 40px;
     list-style: none;
-    width: 500px;
+    width: 300px;
+    padding-left: 50px;
+    margin-right: 900px;
 }
 
 .main-login{
@@ -27,6 +28,7 @@ li {
 	font-family: 'Poppins';
 	font-size: 50px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .description{
@@ -49,4 +51,5 @@ li {
 	margin-top: 0px;
     margin-bottom: 40px;
     color: white;
+    width: 500px;
 }
