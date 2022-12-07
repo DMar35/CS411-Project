@@ -8,6 +8,8 @@ import Home from './components/Home';
 
 export default function App() {
 	return (
+		<div>
+		<NavBar/>
 		<BrowserRouter>
 			<div className="App">
 				<Routes>
@@ -17,5 +19,6 @@ export default function App() {
 				</Routes> 
 			</div>
 		</BrowserRouter>
+		</div>
 	);
 }

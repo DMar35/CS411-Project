@@ -1,3 +1,9 @@
 .test {
-    width: 500px;
+    display: flex;
+}
+
+li {
+    padding-right: 650px;
+    padding-top: 25px;
+    list-style: none;
 }
