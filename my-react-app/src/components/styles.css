@@ -1,4 +1,12 @@
 .test {
+    display: flex;
+    text-decoration: none;
+}
+
+li {
+    padding-right: 650px;
+    padding-top: 25px;
+    list-style: none;
     width: 500px;
 }
 

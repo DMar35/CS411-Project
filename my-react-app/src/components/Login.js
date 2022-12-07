@@ -45,6 +45,7 @@ const Login = (props) => {
 
 
 	return (
+	<div>
 		<div className="auth-form-container">
 			<form className="login-form" onSubmit={handleSubmit}>
 				<label for='email'>Email</label>
@@ -70,6 +71,7 @@ const Login = (props) => {
 				Not have an account ? Sign up here
 			</Link>
 		</div>
+	</div>
 	)
 }
 
