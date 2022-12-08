@@ -1,6 +1,6 @@
 import "./styles.css"
 import React from "react";
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+// import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -20,7 +20,7 @@ const NavBar = () => {
           <a href="/register">About</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/home">Contact</a>
         </li>
       </ul>
     </nav>
