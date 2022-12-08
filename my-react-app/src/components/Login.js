@@ -54,7 +54,10 @@ const Login = (props) => {
 				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
-				<button type='submit' className='button'>Login</button>
+				<span className="forgot-password">Forgot password?</span>
+				<Link to="/home">
+					<button type='submit' className='button'>Login</button>
+				</Link>
 				<div id="signInDiv"></div>
 				{
 					Object.keys(user).length != 0 &&
@@ -69,9 +72,13 @@ const Login = (props) => {
 				}
 
 			</form>
-			<Link to="/register" variant="body2">
-				Not have an account ? Sign up here
-			</Link>
+			{/* <Link to="/register" variant="body2">
+				Don't have an account? Sign up
+			</Link> */}
+			<span>
+				Don't have an account? &nbsp;
+				<Link to="/register" variant="body2" className="cta">Sign up</Link>
+			</span>
 		</div>
 	</div>
 	)

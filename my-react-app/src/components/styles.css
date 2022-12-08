@@ -63,3 +63,20 @@ li {
     color: white;
     width: 500px;
 }
+
+.forgot-password{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+    margin-left: 180px;
+	font-weight: 600;
+}
+
+.cta{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+	font-weight: 600;
+}

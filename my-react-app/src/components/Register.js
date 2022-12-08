@@ -26,10 +26,10 @@ const Register = (props) => {
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
 				<button type='submit' className='button'>Register</button>
 			</form>
-			{/* <p>Already have an account?</p><button onClick={() => props.onFormSwitch('login')}>Login</button> */}
-			<Link to="/login" variant="body2">
-				Already have an account? Login
-			</Link>
+			<span>
+				Already have an account? &nbsp;
+				<Link to="/login" variant="body2" className="cta">Login</Link>
+			</span>
 		</div>
 	)
 }
