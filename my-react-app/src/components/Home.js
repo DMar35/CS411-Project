@@ -95,7 +95,7 @@ const Home = () => {
           <div className="item" key={index}>
             <div style={{ display: "flex", width: "1000px", alignContent:"center"}}>
               <div className="eventName display-linebreak">
-                <a href={event.url}>{event.name}</a>
+                <a href={event.url} target="_blank">{event.name}</a>
                 <button className="interestedButton" onClick={save}>Interested</button>
               </div>
             </div>
