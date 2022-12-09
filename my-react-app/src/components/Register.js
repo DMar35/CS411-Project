@@ -15,7 +15,7 @@ const Register = (props) => {
 		<div className="auth-form-container">
 			<form className="register-form" onSubmit={handleSubmit}>
 				<span className="main-login">Create an Account</span>
-				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
+				<span className="description">Discover cheaper prices with us.</span>
 				<label for='first name'>First Name</label>
 				<input value={firstName} onChange={(e) => setFirstName(e.target.value)} name='First Name' id='name' placeholder='First Name' />
 				<label for='last name'>Last Name</label>
@@ -26,6 +26,7 @@ const Register = (props) => {
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
 				<button type='submit' className='button'>Register</button>
 			</form>
+			{/* <span>By clicking Register, you agree with our Terms & Condition</span> */}
 			<span>
 				Already have an account? &nbsp;
 				<Link to="/login" variant="body2" className="cta">Login</Link>

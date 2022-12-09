@@ -1,8 +1,3 @@
-.test {
-  /* display: flex; */
-  text-decoration: none;
-}
-
 li {
     padding-top: 40px;
     list-style: none;
@@ -17,7 +12,7 @@ li {
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 30px;
-	margin-top: 15px;
+	margin-top: -170px;
     color: black;
 }
 
@@ -26,8 +21,8 @@ li {
 	padding: 0.25rem 0;
 	font-weight: 600;
 	font-family: 'Poppins';
-	font-size: 50px;
-    color: white;
+	font-size: 45px;
+    color: #43a98c;;
     margin-bottom: 10px;
 }
 
@@ -59,8 +54,8 @@ li {
 	font-family: 'Poppins';
 	font-size: 15px;
 	margin-top: 0px;
-    margin-bottom: 40px;
-    color: white;
+    margin-bottom: 60px;
+    color: black;
     margin-left: 470px;
     width: 500px;
 }
@@ -83,10 +78,10 @@ li {
 }
 
 .searchEvent{
-    margin-left: 550px;
+    margin-left: 520px;
     color: black;
     height: 50px;
-    width: 350px;
+    width: 400px;
     align-content: center;
     /* min-width: 100%; */
     border-radius: 0;
@@ -96,7 +91,7 @@ li {
     border: none;
     outline: none;
     border-bottom: 3px solid white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 35px 0px, rgba(0, 0, 0, 0.05) 5px 10px 10px -5px;
 }
 
   .previousButton{
@@ -105,7 +100,7 @@ li {
     font-family: 'Poppins';
     font-size: 15px;
     border: coral;
-    color: white;
+    color: coral;
     margin-right: 5px;
   }
 
@@ -118,3 +113,24 @@ li {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
+
+/* NAVIGATION BAR */
+
+.header {
+    display: inline-flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px 40px;
+    height: 80px;
+    margin-bottom: 80px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 1px 0px, rgba(255, 255, 255, 0.8) 0px 1px 1px 2px;
+  }
+
+.option{
+    color: #43a98c;
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin-top: -30px;
+    align-items: center;
+}

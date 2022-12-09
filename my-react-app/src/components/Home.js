@@ -33,13 +33,14 @@ const Home = () => {
 
   return (
       <div className="auth-form-container">
-            <Helmet>
-                <style>{'body { background-color: #70BD99; }'}</style>
-            </Helmet>
+            {/* <Helmet>
+                {/* <style>{'body { background-color: #70BD99; }'}</style> */}
+                {/* <style>{'body { background: linear-gradient(#43A98C, #A5D5A7); }'}</style> */}
+            {/* </Helmet> */} 
             <span className="main-home">Welcome Back</span>
             <span className="description-home">Don't want to pay much for a ticket? We got you! Search an event that you are interested in in the search bar below. </span>
       <input className="searchEvent"
-        placeholder="Enter Event to Search" 
+        placeholder="Search for Music, Sports, and Arts events" 
         onChange={(event) => setQuery(event.target.value)}
       />
       <div className="custom-pagination">

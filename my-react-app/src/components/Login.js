@@ -49,7 +49,7 @@ const Login = (props) => {
 		<div className="auth-form-container">
 			<form className="login-form" onSubmit={handleSubmit}>
 				<span className="main-login">Hello Again</span>
-				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
+				<span className="description">Please enter your account details.</span>
 				<label for='email'>Email</label>
 				<input classname="initiation-input" value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
