@@ -61,20 +61,16 @@ const Login = (props) => {
 				<div id="signInDiv"></div>
 				{
 					Object.keys(user).length != 0 &&
-					<button onClick={ (e) => handleSignOut(e)}>Sign Out</button>
+					<button onClick={ (e) => handleSignOut(e)} className="signOutButton">Sign Out</button>
 				}
 				{
 					user && 
 					<div>
-						<img src={user.picture}></img>
-						<h3>{user.name}</h3>
+						<img src={user.picture} className="googleImage"></img>
+						<h3 className="googleName">{user.name}</h3>
 					</div>
 				}
-
 			</form>
-			{/* <Link to="/register" variant="body2">
-				Don't have an account? Sign up
-			</Link> */}
 			<span>
 				Don't have an account? &nbsp;
 				<Link to="/register" variant="body2" className="cta">Sign up</Link>
