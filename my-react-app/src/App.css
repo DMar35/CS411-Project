@@ -30,17 +30,23 @@ input{
 
 .button{
 	border: none;
-	background-color:  #70BD99;
 	padding: 10px;
 	border-radius: 10px;
-	margin-top: 80px;
+	margin-top: 60px;
 	color: white;
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 15px;
 	width: 310px;
 	margin-bottom: 20px;
+	align-items: center;
+	/* background-image: linear-gradient(to bottom right, #fcb69f 10%, #fcb69f 51%, #ffecd2 100%); */
+	background-color: #F99A73;
 }
+
+.buttnn:hover {
+	background-position: right center; 
+  }
 
 .secondaryButton{
 	border: 2px solid #C9C8C8;
