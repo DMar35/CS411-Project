@@ -23,6 +23,9 @@ const NavBar = () => {
           <li className="option">
             <a href="/account" className="option">My Account</a>
           </li>
+          <li className="option">
+            <a href="/interested" className="option">Interested</a>
+          </li>
         </ul>
       {/* </div> */}
       {/* <div className="mobile-menu" onClick={handleClick}>
