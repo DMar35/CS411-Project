@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import jwt_decode from "jwt-decode"
 import { Link } from 'react-router-dom';
 import "./styles.css"
+import NavBar from './NavBar';
 
 const client_id = '363934785082-5t6e6q3k2g9k1ntgqca39j1osvuqlr28.apps.googleusercontent.com';
 
@@ -44,13 +45,19 @@ const Login = (props) => {
 
 
 	return (
+	<div>
 		<div className="auth-form-container">
 			<form className="login-form" onSubmit={handleSubmit}>
+				<span className="main-login">Hello Again</span>
+				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
 				<label for='email'>Email</label>
 				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
-				<button type='submit'>Login</button>
+				<span className="forgot-password">Forgot password?</span>
+				<Link to="/home">
+					<button type='submit' className='button'>Login</button>
+				</Link>
 				<div id="signInDiv"></div>
 				{
 					Object.keys(user).length != 0 &&
@@ -65,13 +72,15 @@ const Login = (props) => {
 				}
 
 			</form>
-			{/* <div>Don't have an account?
-				<button className="link-button" onClick={() => props.onFormSwitch('Register')}>Sign Up</button>
-			</div> */}
-			<Link to="/register" variant="body2">
-				Not have an account ? Sign up here
-			</Link>
+			{/* <Link to="/register" variant="body2">
+				Don't have an account? Sign up
+			</Link> */}
+			<span>
+				Don't have an account? &nbsp;
+				<Link to="/register" variant="body2" className="cta">Sign up</Link>
+			</span>
 		</div>
+	</div>
 	)
 }
 
