@@ -18,9 +18,9 @@ proxies = {
     'https': "https://85.195.104.71:80"
 }
 
-URL = 'https://www.stubhub.com/boston-celtics-boston-tickets-12-16-2022/event/150337015/?quantity=2'
+VIVID = 'https://www.vividseats.com/boston-celtics-tickets-td-garden-12-16-2022--sports-nba-basketball/production/4067924'
 
-response = requests.get(URL,
+response = requests.get(VIVID,
            headers=hdr,
            #proxies=proxies,
            #verify=False

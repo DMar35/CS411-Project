@@ -12,12 +12,46 @@ hdr = {'User-Agent': ua.random,
       'Accept-Language': 'en-US,en;q=0.8',
       'Connection': 'keep-alive'}
 
-URL = 'https://seatgeek.com/magic-at-celtics-tickets/12-16-2022-boston-massachusetts-td-garden/nba/5775632'
+SEATGEEK = 'https://seatgeek.com/magic-at-celtics-tickets/12-16-2022-boston-massachusetts-td-garden/nba/5775632'
+STUBHUB = 'https://www.stubhub.com/boston-celtics-boston-tickets-12-16-2022/event/150337015/?quantity=1'
+VIVID = 'https://www.vividseats.com/boston-celtics-tickets-td-garden-12-16-2022--sports-nba-basketball/production/4067924'
 
-dr = webdriver.Chrome()
-time.sleep(5)
-#dr.get("https://www.stubhub.com/boston-celtics-boston-tickets-12-16-2022/event/150337015/?quantity=2")
-dr.get(URL)
-bs = BeautifulSoup(dr.page_source,"lxml")
 
-print(bs.text)
+def get_event_html(link):
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.get(link)
+    pageSource = driver.execute_script("return document.body.innerHTML;")
+    #fileToWrite = open("page_source.html", "w")
+    #fileToWrite.write(pageSource)
+    #fileToWrite.close()
+    fileToRead = open("page_source.html", "r")
+    #print(fileToRead.read())
+    page = fileToRead.read()
+    fileToRead.close()
+    driver.quit()
+    return page
+
+#TO-DO's:
+#Get Ticket Prices/Sections
+#Get Event Ticket/Listing ID's
+def parse_stubhub(event_text):
+    event_text = BeautifulSoup(event_text, features='html.parser')
+    sections = event_text.find_all('div', class_="sc-igRwjb sc-eaHRBM ibSsvj eupezl")
+    price = event_text.find_all('div', class_="sc-igRwjb ibSsvj")
+    listing_ids = event_text.find_all('div', class_="sc-iXwhVA bXGUMM")
+    tickets = {}
+    for i in range(len(sections)):
+        tickets[listing_ids[i].attrs['data-listing-id']] = {sections[i].text : price[i].text}
+    return tickets
+
+def parse_seatgeek(event_text):
+    return
+
+# geek_tickets = get_event(SEATGEEK)
+# print(parse_seatgeek(geek_tickets))
+
+stub_tickets = get_event_html(STUBHUB)
+print(parse_stubhub(stub_tickets))
+
+

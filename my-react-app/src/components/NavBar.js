@@ -1,23 +1,21 @@
 import "./styles.css"
 import React from "react";
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+// import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const NavBar = () => {
     return (
-    <nav className="test">
-        <ul className="test">
-            <li>
-                <a href="/home">Home</a>
-            </li>
-            <li>
-                <a href="/login">Login</a>
-            </li>
-            <li>
-                <a href="/register">Register</a>
-            </li>
-        </ul>
-    </nav>
+        <nav className="test">
+
+            <ul className="test">
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/account">My Account</a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 export default NavBar

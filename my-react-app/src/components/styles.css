@@ -1,25 +1,82 @@
 .test {
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
 }
 
 li {
-    padding-right: 650px;
-    padding-top: 25px;
+    padding-top: 40px;
     list-style: none;
-    width: 500px;
+    width: 300px;
+    padding-left: 50px;
+    margin-right: 900px;
 }
 
-.main{
+.main-login{
+	text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 30px;
+	margin-top: 15px;
+    color: black;
+}
+
+.main-home{
 	text-align: center;
 	padding: 0.25rem 0;
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 50px;
-	margin-top: 15px;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.navbar{
-    margin-top: 0px;
-    color: green;
+.main-account{
+	text-align: center;
+	/* padding: 0.25rem 0; */
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 30px;
+    color: black;
+    padding-top: -200px;
+}
+
+.description{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: grey;
+}
+
+.description-home{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: white;
+    width: 500px;
+}
+
+.forgot-password{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+    margin-left: 180px;
+	font-weight: 600;
+}
+
+.cta{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+	font-weight: 600;
 }
