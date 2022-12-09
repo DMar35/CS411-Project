@@ -15,7 +15,7 @@ hdr = {'User-Agent': ua.random,
 SEATGEEK = 'https://seatgeek.com/magic-at-celtics-tickets/12-16-2022-boston-massachusetts-td-garden/nba/5775632'
 STUBHUB = 'https://www.stubhub.com/boston-celtics-boston-tickets-12-16-2022/event/150337015/?quantity=1'
 VIVID = 'https://www.vividseats.com/boston-celtics-tickets-td-garden-12-16-2022--sports-nba-basketball/production/4067924'
-
+TM = 'https://www.ticketmaster.com/boston-celtics-vs-orlando-magic-boston-massachusetts-12-16-2022/event/01005D10AA6C203F'
 
 def get_event_html(link):
     driver = webdriver.Chrome()
@@ -45,13 +45,18 @@ def parse_stubhub(event_text):
         tickets[listing_ids[i].attrs['data-listing-id']] = {sections[i].text : price[i].text}
     return tickets
 
+def parse_ticketmaster(event_text):
+    event_text = BeautifulSoup
+
 def parse_seatgeek(event_text):
     return
 
 # geek_tickets = get_event(SEATGEEK)
 # print(parse_seatgeek(geek_tickets))
 
-stub_tickets = get_event_html(STUBHUB)
-print(parse_stubhub(stub_tickets))
+# stub_tickets = get_event_html(STUBHUB)
+# print(parse_stubhub(stub_tickets))
+
+print(get_event_html(TM))
 
 
