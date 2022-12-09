@@ -12,18 +12,8 @@ li {
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 30px;
-	margin-top: -170px;
+	margin-top: -220px;
     color: black;
-}
-
-.main-home{
-	text-align: center;
-	padding: 0.25rem 0;
-	font-weight: 600;
-	font-family: 'Poppins';
-	font-size: 45px;
-    color: #43a98c;;
-    margin-bottom: 10px;
 }
 
 .main-account{
@@ -47,19 +37,6 @@ li {
     color: grey;
 }
 
-.description-home{
-    text-align: center;
-	padding: 0.25rem 0;
-	font-weight: 400;
-	font-family: 'Poppins';
-	font-size: 15px;
-	margin-top: 0px;
-    margin-bottom: 60px;
-    color: black;
-    margin-left: 470px;
-    width: 500px;
-}
-
 .forgot-password{
     margin-top: 10px;
     font-family: 'Poppins';
@@ -77,43 +54,6 @@ li {
 	font-weight: 600;
 }
 
-.searchEvent{
-    margin-left: 520px;
-    color: black;
-    height: 50px;
-    width: 400px;
-    align-content: center;
-    /* min-width: 100%; */
-    border-radius: 0;
-    /* background-color: transparent; */
-    background-color: #FFFFFF;
-    color: black;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 35px 0px, rgba(0, 0, 0, 0.05) 5px 10px 10px -5px;
-}
-
-  .previousButton{
-    margin-top: 50px;
-    background-color: transparent;
-    font-family: 'Poppins';
-    font-size: 15px;
-    border: coral;
-    color: coral;
-    margin-right: 5px;
-  }
-
-  .nextButton{
-    margin-top: 50px;
-    font-size: 15px;
-    background-color: coral;
-    font-family: 'Poppins';
-    color: white;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  }
-
 /* NAVIGATION BAR */
 
 .header {
@@ -128,9 +68,115 @@ li {
   }
 
 .option{
-    color: #43a98c;
+    color: #81C59E;
     font-family: 'Poppins';
     font-size: 20px;
     margin-top: -30px;
     align-items: center;
 }
+
+/* HOME PAGE */
+
+.main-home{
+	text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 45px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.description-home{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 60px;
+    color: black;
+    margin-left: 250px;
+    width: 500px;
+}
+
+.searchEvent{
+    margin-left: 300px;
+    color: black;
+    height: 50px;
+    width: 400px;
+    align-content: center;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 35px 0px, rgba(0, 0, 0, 0.05) 5px 10px 10px -5px;
+}
+
+  .previousButton{
+    margin-top: 50px;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: #F99A73;
+    color: #F99A73;
+    margin-right: 5px;
+  }
+
+  .nextButton{
+    margin-top: 50px;
+    font-size: 15px;
+    background-color: #F99A73;
+    font-family: 'Poppins';
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 80px;
+    width: 6em;
+    margin-left: 10px;
+  }
+
+.eventName{
+    font-size: 20px;
+    font-weight: 800;
+	font-family: 'Poppins';
+    margin-top: 15px;
+    /* background-color: #81C59E; */
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.eventInfo{
+    color: black;
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 14px;
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+}
+
+.eventVenue{
+    color: #81C59E;
+    width: 120px;
+    font-family: 'Poppins';
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.eventDate{
+    background-color: rgba(249, 154, 115, 0.2);
+    color: #F99A73;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 600;
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+    width: 10%;
+}
+
+a:link { text-decoration: none; color: black}

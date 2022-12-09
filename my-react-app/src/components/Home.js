@@ -44,7 +44,7 @@ const Home = () => {
         onChange={(event) => setQuery(event.target.value)}
       />
       <div className="custom-pagination">
-        <div className="page-info">
+        {/* <div className="page-info">
           {/* <div>
             Page Number:{" "}
             <span style={{ fontWeight: "bold" }}>{page.number}</span>
@@ -55,9 +55,9 @@ const Home = () => {
           {/* <div>
             Page Total: <span style={{ fontWeight: "bold" }}>{pageTotal}</span>
           </div> */}
-        </div>
+        {/* </div> */} 
         <input
-          style={{ padding: "8px" }}
+          style={{ padding: "8px", width: "50px", border: "none"}}
           type="number"
           value={page.number}
           onChange={(event) => setPage({ ...page, number: event.target.value })}
@@ -86,25 +86,27 @@ const Home = () => {
           Next
         </button>
       </div>
-      <div className="list">
+      <div>
         {events.map((event, index) => (
           <div className="item" key={index}>
-            <div style={{ display: "block" }}>
-              <div>
+            <div style={{ display: "flex", width: "1000px", alignContent:"center"}}>
+              <div className="eventName display-linebreak">
                 <a href={event.url}>{event.name}</a>
               </div>
-              <div className="one-line">
-                {event.info || "no information for now"}
-              </div>
             </div>
-            <div>
-              <div style={{ color: "silver" }}>
+
+            <div className="eventDate">
                 {event.dates.start.localDate}
-              </div>
-              <div
-                className="one-line"
-                style={{ color: "silver", width: "120px" }}
-              >
+            </div>
+
+            <div style={{ display: "flex", width: "1000px", alignContent:"center"}}>
+            <div className="eventInfo">
+                {event.info || "no information for now"}
+            </div>
+            </div>
+
+            <div style={{ display: "flex", width: "1000px"}}>
+            <div className="eventVenue">
                 {event._embedded.venues[0].name}
               </div>
             </div>
