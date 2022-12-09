@@ -1,6 +1,9 @@
+
 import React from "react";
 import axios from "axios";
 import "./styles.css";
+import NavBar from './NavBar';
+import {Helmet} from 'react-helmet';
 
 const Home = () => {
   const [query, setQuery] = React.useState("");
@@ -29,7 +32,12 @@ const Home = () => {
   }, [page, query]);
 
   return (
-    <div className="auth-form-container">
+      <div className="auth-form-container">
+            <Helmet>
+                <style>{'body { background-color: #70BD99; }'}</style>
+            </Helmet>
+            <span className="main-home">Welcome Back</span>
+            <span className="description-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tempor pulvinar at arcu libero sit id dignissim sollicitudin.</span>
       <p>This is a paragraph and I am writing on the home page</p>
       <p>This is another paragraph, hi hey hello whatsup yo</p>
       <span className="main">Welcome Back</span>

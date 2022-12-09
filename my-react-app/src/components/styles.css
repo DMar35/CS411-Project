@@ -4,62 +4,79 @@
 }
 
 li {
-  padding-right: 650px;
-  padding-top: 25px;
-  list-style: none;
-  width: 500px;
+    padding-top: 40px;
+    list-style: none;
+    width: 300px;
+    padding-left: 50px;
+    margin-right: 900px;
 }
 
-.main {
-  text-align: center;
-  padding: 0.25rem 0;
-  font-weight: 600;
-  font-family: "Poppins";
-  font-size: 50px;
-  margin-top: 15px;
+.main-login{
+	text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 30px;
+	margin-top: 15px;
+    color: black;
 }
 
-.navbar {
-  margin-top: 0px;
-  color: green;
+.main-home{
+	text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.custom-pagination {
-  margin-top: 20px;
-  text-align: left;
+.main-account{
+	text-align: center;
+	/* padding: 0.25rem 0; */
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 30px;
+    color: black;
+    padding-top: -200px;
 }
 
-.list {
-  text-align: left;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 20px 0;
-  width: 800px;
+.description{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: grey;
 }
 
-.item {
-  border-bottom: 1px solid silver;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.description-home{
+    text-align: center;
+	padding: 0.25rem 0;
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin-top: 0px;
+    margin-bottom: 40px;
+    color: white;
+    width: 500px;
 }
 
-button {
-  width: 100px;
-  border-radius: 10px !important;
+.forgot-password{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+    margin-left: 180px;
+	font-weight: 600;
 }
 
-.page-info {
-  border-radius: 10px;
-  border: 2px solid black;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 310px;
-}
-
-.one-line {
-  width: 600px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.cta{
+    margin-top: 10px;
+    font-family: 'Poppins';
+	font-size: 15px;
+	color:  #70BD99;
+	font-weight: 600;
 }

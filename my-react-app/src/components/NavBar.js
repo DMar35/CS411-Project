@@ -6,24 +6,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const NavBar = () => {
     return (
-        // <Navbar expand="lg" variant="light" bg="light">
-        //     <Container>
-        //         <Navbar.Brand href="#">Navbar</Navbar.Brand>
-        //     </Container>
-        // </Navbar>
         <nav className="test">
-      <ul className="test">
-        <li>
-          <a href="/login">Home</a>
-        </li>
-        <li>
-          <a href="/register">About</a>
-        </li>
-        <li>
-          <a href="/home">Contact</a>
-        </li>
-      </ul>
-    </nav>
+
+            <ul className="test">
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/account">My Account</a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 export default NavBar
