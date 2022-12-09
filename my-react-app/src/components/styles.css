@@ -120,16 +120,16 @@ li {
     margin-top: 50px;
     background-color: transparent;
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 14px;
     border: #F99A73;
-    color: #F99A73;
+    color: black;
     margin-right: 5px;
   }
 
   .nextButton{
     margin-top: 50px;
-    font-size: 15px;
-    background-color: #F99A73;
+    font-size: 14px;
+    background-color: black;
     font-family: 'Poppins';
     color: white;
     border: none;
@@ -138,6 +138,7 @@ li {
     width: 6em;
     margin-left: 10px;
     border-radius: 5ch;
+    height:30px;
   }
 
 .eventName{
@@ -186,13 +187,28 @@ li {
     background-color: white;
     font-size: 15px;
     border-color: #F99A73;
-    border-radius: 5ch;
+    border-radius: 4ch;
     color: #F99A73;
     text-align: center;
-    width: 110px;
+    width: 120px;
     font-weight: 600;
     margin-left: 40px;
     border-style: solid;
+    height:35px;
+}
+
+.interestedButton:hover{
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: #F99A73;
+    color: white;
+    border: none;
+    width: 120px;
+    font-weight: 400;
+    margin-left: 40px;
+    border-style: solid;
+    border-radius: 4ch;
+    height:35px;
 }
 
 a:link { text-decoration: none; color: black}
