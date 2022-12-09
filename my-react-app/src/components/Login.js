@@ -51,7 +51,7 @@ const Login = (props) => {
 				<span className="main-login">Hello Again</span>
 				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
 				<label for='email'>Email</label>
-				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
+				<input classname="initiation-input" value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label for='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
 				<span className="forgot-password">Forgot password?</span>

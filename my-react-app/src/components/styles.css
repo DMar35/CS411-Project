@@ -1,5 +1,5 @@
 .test {
-  display: flex;
+  /* display: flex; */
   text-decoration: none;
 }
 
@@ -61,6 +61,7 @@ li {
 	margin-top: 0px;
     margin-bottom: 40px;
     color: white;
+    margin-left: 470px;
     width: 500px;
 }
 
@@ -80,3 +81,40 @@ li {
 	color:  #70BD99;
 	font-weight: 600;
 }
+
+.searchEvent{
+    margin-left: 550px;
+    color: black;
+    height: 50px;
+    width: 350px;
+    align-content: center;
+    /* min-width: 100%; */
+    border-radius: 0;
+    /* background-color: transparent; */
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+  .previousButton{
+    margin-top: 50px;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: coral;
+    color: white;
+    margin-right: 5px;
+  }
+
+  .nextButton{
+    margin-top: 50px;
+    font-size: 15px;
+    background-color: coral;
+    font-family: 'Poppins';
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }

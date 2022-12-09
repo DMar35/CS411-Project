@@ -37,30 +37,23 @@ const Home = () => {
                 <style>{'body { background-color: #70BD99; }'}</style>
             </Helmet>
             <span className="main-home">Welcome Back</span>
-            <span className="description-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tempor pulvinar at arcu libero sit id dignissim sollicitudin.</span>
-      <p>This is a paragraph and I am writing on the home page</p>
-      <p>This is another paragraph, hi hey hello whatsup yo</p>
-      <span className="main">Welcome Back</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tempor
-        pulvinar at arcu libero sit id dignissim sollicitudin.
-      </p>
-      <input
-        placeholder="Enter Event to Search"
+            <span className="description-home">Don't want to pay much for a ticket? We got you! Search an event that you are interested in in the search bar below. </span>
+      <input className="searchEvent"
+        placeholder="Enter Event to Search" 
         onChange={(event) => setQuery(event.target.value)}
       />
       <div className="custom-pagination">
         <div className="page-info">
-          <div>
+          {/* <div>
             Page Number:{" "}
             <span style={{ fontWeight: "bold" }}>{page.number}</span>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             Page size: <span style={{ fontWeight: "bold" }}>{page.size}</span>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             Page Total: <span style={{ fontWeight: "bold" }}>{pageTotal}</span>
-          </div>
+          </div> */}
         </div>
         <input
           style={{ padding: "8px" }}
@@ -75,7 +68,7 @@ const Home = () => {
               ...page,
               number: page.number > 1 ? Number(page.number) - 1 : 0,
             })
-          }
+          } className="previousButton"
         >
           Previous
         </button>
@@ -87,7 +80,7 @@ const Home = () => {
               number:
                 page.number < pageTotal ? Number(page.number) + 1 : page.number,
             })
-          }
+          } className="nextButton"
         >
           Next
         </button>
