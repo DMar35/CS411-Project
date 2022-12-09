@@ -18,12 +18,12 @@ li {
 
 .main-account{
 	text-align: center;
-	/* padding: 0.25rem 0; */
 	font-weight: 600;
 	font-family: 'Poppins';
 	font-size: 30px;
     color: black;
-    padding-top: -200px;
+    /* padding-top: -800px; */
+    margin-top: -400px;
 }
 
 .description{
@@ -95,9 +95,10 @@ li {
 	font-size: 15px;
 	margin-top: 0px;
     margin-bottom: 60px;
-    color: black;
-    margin-left: 250px;
-    width: 500px;
+    color: #656565;
+    margin-left: 240px;
+    width: 530px;
+    line-height: 1.8;
 }
 
 .searchEvent{
@@ -136,6 +137,7 @@ li {
     margin-bottom: 80px;
     width: 6em;
     margin-left: 10px;
+    border-radius: 5ch;
   }
 
 .eventName{
@@ -177,6 +179,20 @@ li {
     white-space: pre-wrap;
     margin-bottom: 5px;
     width: 10%;
+}
+
+.interestedButton{
+    font-family: 'Poppins';
+    background-color: white;
+    font-size: 15px;
+    border-color: #F99A73;
+    border-radius: 5ch;
+    color: #F99A73;
+    text-align: center;
+    width: 110px;
+    font-weight: 600;
+    margin-left: 40px;
+    border-style: solid;
 }
 
 a:link { text-decoration: none; color: black}

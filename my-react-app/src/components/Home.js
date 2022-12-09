@@ -31,6 +31,10 @@ const Home = () => {
       });
   }, [page, query]);
 
+  function save() {
+    alert('Event saved to your account!');
+  }
+
   return (
       <div className="auth-form-container">
             {/* <Helmet>
@@ -38,7 +42,7 @@ const Home = () => {
                 {/* <style>{'body { background: linear-gradient(#43A98C, #A5D5A7); }'}</style> */}
             {/* </Helmet> */} 
             <span className="main-home">Welcome Back</span>
-            <span className="description-home">Don't want to pay much for a ticket? We got you! Search an event that you are interested in in the search bar below. </span>
+            <span className="description-home">Search an event that you are interested in going in the search bar below. You can save an event by clicking the Interested button.</span>
       <input className="searchEvent"
         placeholder="Search for Music, Sports, and Arts events" 
         onChange={(event) => setQuery(event.target.value)}
@@ -92,6 +96,7 @@ const Home = () => {
             <div style={{ display: "flex", width: "1000px", alignContent:"center"}}>
               <div className="eventName display-linebreak">
                 <a href={event.url}>{event.name}</a>
+                <button className="interestedButton" onClick={save}>Interested</button>
               </div>
             </div>
 
