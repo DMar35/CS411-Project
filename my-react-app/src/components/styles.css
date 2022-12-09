@@ -22,8 +22,8 @@ li {
 	font-family: 'Poppins';
 	font-size: 30px;
     color: black;
-    /* padding-top: -800px; */
     margin-top: -400px;
+    margin-bottom: 40px;
 }
 
 .description{
@@ -213,6 +213,8 @@ li {
 
 a:link { text-decoration: none; color: black}
 
+/* GOOGLE SIGN IN */
+
 .googleImage{
     width: 40px;
     margin-top: 20px;
@@ -239,4 +241,35 @@ a:link { text-decoration: none; color: black}
 	margin-bottom: 20px;
 	align-items: center;
     background-color: transparent;
+    text-decoration: none;
+}
+
+
+.sendButton{
+    font-family: 'Poppins';
+    background-color: white;
+    font-size: 15px;
+    border-color: #F99A73;
+    border-radius: 4ch;
+    color: #F99A73;
+    text-align: center;
+    width: 120px;
+    font-weight: 600;
+    margin-left: 230px;
+    border-style: solid;
+    height:35px;
+}
+
+.sendButton:hover{
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: #F99A73;
+    color: white;
+    border: none;
+    width: 120px;
+    font-weight: 400;
+    margin-left: 230px;
+    border-style: solid;
+    border-radius: 4ch;
+    height:35px;
 }

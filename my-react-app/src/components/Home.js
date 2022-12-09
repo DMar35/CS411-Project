@@ -48,18 +48,6 @@ const Home = () => {
         onChange={(event) => setQuery(event.target.value)}
       />
       <div className="custom-pagination">
-        {/* <div className="page-info">
-          {/* <div>
-            Page Number:{" "}
-            <span style={{ fontWeight: "bold" }}>{page.number}</span>
-          </div> */}
-          {/* <div>
-            Page size: <span style={{ fontWeight: "bold" }}>{page.size}</span>
-          </div> */}
-          {/* <div>
-            Page Total: <span style={{ fontWeight: "bold" }}>{pageTotal}</span>
-          </div> */}
-        {/* </div> */} 
         <input
           style={{ padding: "8px", width: "50px", border: "none"}}
           type="number"
