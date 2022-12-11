@@ -54,9 +54,9 @@ def parse_seatgeek(event_text):
 # geek_tickets = get_event(SEATGEEK)
 # print(parse_seatgeek(geek_tickets))
 
-# stub_tickets = get_event_html(STUBHUB)
-# print(parse_stubhub(stub_tickets))
+stub_tickets = get_event_html(STUBHUB)
+print(parse_stubhub(stub_tickets))
 
-print(get_event_html(TM))
+#print(get_event_html(TM))
 
 

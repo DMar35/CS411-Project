@@ -49,9 +49,9 @@ const Login = (props) => {
 		<div className="auth-form-container">
 			<form className="login-form" onSubmit={handleSubmit}>
 				<span className="main-login">Hello Again</span>
-				<span className="description">Lorem ipsum dolor sit amet consectetur.</span>
+				<span className="description">Please enter your account details.</span>
 				<label htmlFor='email'>Email</label>
-				<input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
+				<input classname="initiation-input" value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='youremail@gmail.com' id='email' name='email' />
 				<label htmlFor='password'>Password</label>
 				<input value={pass} onChange={(e) => setPass(e.target.value)} type='password' placeholder='********' id='password' name='password' />
 				<span className="forgot-password">Forgot password?</span>
@@ -61,20 +61,16 @@ const Login = (props) => {
 				<div id="signInDiv"></div>
 				{
 					Object.keys(user).length != 0 &&
-					<button onClick={ (e) => handleSignOut(e)}>Sign Out</button>
+					<button onClick={ (e) => handleSignOut(e)} className="signOutButton">Sign Out</button>
 				}
 				{
 					user && 
 					<div>
-						<img src={user.picture}></img>
-						<h3>{user.name}</h3>
+						<img src={user.picture} className="googleImage"></img>
+						<h3 className="googleName">{user.name}</h3>
 					</div>
 				}
-
 			</form>
-			{/* <Link to="/register" variant="body2">
-				Don't have an account? Sign up
-			</Link> */}
 			<span>
 				Don't have an account? &nbsp;
 				<Link to="/register" variant="body2" className="cta">Sign up</Link>
