@@ -4,7 +4,6 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from "react";
 
-
 const NavBar = () => {
 
     return (
