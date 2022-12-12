@@ -260,7 +260,7 @@ a:link {
   text-align: center;
   width: 120px;
   font-weight: 600;
-  margin-left: 230px;
+  margin-left: -420px;
   border-style: solid;
   height: 35px;
 }
@@ -273,14 +273,15 @@ a:link {
   border: none;
   width: 120px;
   font-weight: 400;
-  margin-left: 230px;
+  margin-left: -420px;
   border-style: solid;
   border-radius: 4ch;
   height: 35px;
 }
 
+/* SPOTIFY PAGE */
+
 .main-explore{
-    /* position:absolute; */
 	text-align: center;
 	padding: 0.25rem 0;
 	font-weight: 600;
@@ -288,7 +289,7 @@ a:link {
 	font-size: 45px;
     color: black;
     margin-bottom: 10px;
-    margin-top: -400px;
+    margin-top: -300px;
 }
 
 .description-explore{
@@ -304,7 +305,6 @@ a:link {
 	margin-top: 0px;
     margin-bottom: 40px;
     color: #656565;
-    /* margin-left: 15px; */
     width: 530px;
     line-height: 1.8;
 }
@@ -357,7 +357,6 @@ a:link {
 .albumName{
     font-family: 'Poppins';
 	font-size: 15px;
-    /* align-content: left; */
     margin-top: 10px;
     font-weight: 600;
 }
@@ -367,4 +366,19 @@ a:link {
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;
     height: 100px;
+  }
+
+/* MY ACCOUNT PAGE */
+
+.main-account {
+    position:relative;
+    display: block;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-weight: 600;
+    font-family: "Poppins";
+    font-size: 45px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: -400px;
   }
