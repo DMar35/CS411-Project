@@ -6,6 +6,7 @@ import Register from './components/Register';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Account from './components/AccountPage';
+import Spotify from './components/Spotify';
 
 export default function App() {
 	return (
@@ -18,6 +19,7 @@ export default function App() {
 			 		<Route path='/register' element={<Register />} />
 					<Route path='/home' element={<Home />} />
 					<Route path='/account' element={<Account />} />
+					<Route path='/spotify' element={<Spotify />} />
 				</Routes> 
 			</div>
 		</BrowserRouter>
