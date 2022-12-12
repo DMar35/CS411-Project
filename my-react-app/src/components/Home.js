@@ -1,8 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./styles.css";
-import NavBar from "./NavBar";
-import { Helmet } from "react-helmet";
 import { getUser } from "../store/user";
 
 const Home = () => {
