@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j2taf-ds1*@(2xk&o3q!7m-zrmihv+&23i-4$b#6i933c(gbnp'
+SECRET_KEY = 'django-insecure-ay3vqk^l@w54rl_9ht@*=h1yyfscv_pub#@a1e)#%0vw6z7wb)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tickets.apps.TicketsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'ticketBE.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ticket_backend',
+        'USER': 'DavidPY',
+        'PASSWORD': 'Cvtarb12',
+        'HOST': '',
+        'PORT': '3306',
     }
 }
 

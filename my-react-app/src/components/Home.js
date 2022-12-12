@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./styles.css";
-import NavBar from './NavBar';
-import {Helmet} from 'react-helmet';
 
 const Home = () => {
   const [query, setQuery] = React.useState("");
@@ -12,25 +10,7 @@ const Home = () => {
     number: 1,
   });
   const [pageTotal, setPageTotal] = React.useState(0);
-  /* SPOTIFY */
-  const CLIENT_ID = "ce0dd46338aa4f9493e8221b2f3fe15b";
-  const CLIENT_SECRET = "b829b5d402fe48c7808b21ba142487ae";
-  const[accessToken, setaccessToken] = useState("");
-
-  useEffect(() => {
-    var authParameters = {
-        method: 'POST',
-        headers: {
-            'Content-Type' : 'application/x-www-form-urlencoded'
-        },
-        body: 'grant_type=client_credentials&client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET
-    }
-    /* API access token */
-    fetch('https://accounts.spotify.com/api/token', authParameters)
-        .then(result => result.json())
-        .then(data => setaccessToken(data.access_token))
-  }, [])
-
+  
   React.useEffect(() => {
     axios
       .get("https://app.ticketmaster.com/discovery/v2/events", {
@@ -54,10 +34,6 @@ const Home = () => {
 
   return (
       <div className="auth-form-container">
-            {/* <Helmet>
-                {/* <style>{'body { background-color: #70BD99; }'}</style> */}
-                {/* <style>{'body { background: linear-gradient(#43A98C, #A5D5A7); }'}</style> */}
-            {/* </Helmet> */} 
             <span className="main-home">Welcome Back</span>
             <span className="description-home">Search an event that you are interested in going in the search bar below. You can save an event by clicking the Interested button.</span>
       <input className="searchEvent"
