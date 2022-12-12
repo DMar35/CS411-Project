@@ -25,6 +25,11 @@ const Interested = () => {
   return (
     <div className="auth-form-container">
       <span className="main-account">My Account</span>
+      <span className="description-explore">Enter your email to get the events you saved:</span>
+			<input className="searchArtist" value={email} onChange={(e) => setEmail(e.target.value)} type='sendEmail' placeholder='youremail@gmail.com' id='email' name='email' />
+            <div className="eventName display-linebreak">
+                <button className="sendButton" onClick={send}>Send</button>
+              </div>
 
       <div>
         {events.map((event, index) => (
@@ -64,11 +69,6 @@ const Interested = () => {
         ))}
       </div>
 
-      <label for='sendEmail'>Enter your email to get the events you saved:</label>
-			<input classname="sendEmailInput" value={email} onChange={(e) => setEmail(e.target.value)} type='sendEmail' placeholder='youremail@gmail.com' id='email' name='email' />
-            <div className="eventName display-linebreak">
-                <button className="sendButton" onClick={send}>Send</button>
-              </div>
     </div>
   );
 };

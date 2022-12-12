@@ -260,9 +260,9 @@ a:link {
   text-align: center;
   width: 120px;
   font-weight: 600;
-  margin-left: -420px;
   border-style: solid;
   height: 35px;
+  align-items: center;
 }
 
 .sendButton:hover {
@@ -273,10 +273,10 @@ a:link {
   border: none;
   width: 120px;
   font-weight: 400;
-  margin-left: -420px;
   border-style: solid;
   border-radius: 4ch;
   height: 35px;
+  align-items: center;
 }
 
 /* SPOTIFY PAGE */
@@ -290,6 +290,8 @@ a:link {
     color: black;
     margin-bottom: 10px;
     margin-top: -300px;
+    position:relative;
+    display: block;
 }
 
 .description-explore{
@@ -380,5 +382,37 @@ a:link {
     font-size: 45px;
     color: black;
     margin-bottom: 10px;
-    margin-top: -400px;
+    margin-top: -300px;
   }
+
+  .sendButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    background-color: white;
+    font-size: 15px;
+    border-color: #F99A73;
+    border-radius: 4ch;
+    color: #F99A73;
+    width: 120px;
+    font-weight: 600;
+    border-style: solid;
+    height:35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.description-interested{
+    text-align: center;
+    padding: 0.25rem 0;
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    color: #656565;
+    margin-left: 240px;
+    width: 530px;
+    line-height: 1.8;
+}
