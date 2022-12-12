@@ -31,10 +31,6 @@ const Home = () => {
 
   function save(event) {
     alert("Event saved to your account!");
-    // axios.post("https://localhost:3000/saveEvent", {
-    //   user: userStore.user,
-    //   event,
-    // });
     const key = `events_${getUser()}`;
     const events = JSON.parse(localStorage.getItem(key) || "[]");
     events.push(event);
@@ -43,10 +39,6 @@ const Home = () => {
 
   return (
     <div className="auth-form-container">
-      {/* <Helmet>
-                {/* <style>{'body { background-color: #70BD99; }'}</style> */}
-      {/* <style>{'body { background: linear-gradient(#43A98C, #A5D5A7); }'}</style> */}
-      {/* </Helmet> */}
       <span className="main-home">Welcome Back</span>
       <span className="description-home">
         Search an event that you are interested in going in the search bar
