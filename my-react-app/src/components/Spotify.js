@@ -57,24 +57,26 @@ const Spotify = () => {
 
     return (
         <div className="auth-form-container">
-
-            <input className="searchEvent"
+             <span className="main-explore">Explore Artists</span>
+            <span className="description-explore">Search an artist and view the albums that they've created.</span>
+            <input className="searchArtist"
                 placeholder="Search for an artist" 
                 onChange={(event) => setsearchInput(event.target.value)}
             />
-            <button onClick={(e) => search(e)} className="signOutButton">Search</button>
+            <button onClick={(e) => search(e)} className="searchButton">Search</button>
 
-
+            <section class="boxes container">
                 {albums.map((album, i) => {
                     console.log(albums);
                     return(
                         <div>
-                            <img src={album.images[0].url}/>
-                            <span>{album.name}</span>;
-                        </div>
+                            <img className="albumCover" src={album.images[0].url}/>
+                            &nbsp;
+                            <span className="albumName">{album.name}</span>
+                       </div>
                     )
                 })}
-
+             </section>
         </div>
     )
 }
