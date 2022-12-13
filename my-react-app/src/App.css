@@ -63,3 +63,7 @@ input{
 	background-color: white;
 	color:  #70BD99;
 }
+
+.hidden {
+	display: none;
+}

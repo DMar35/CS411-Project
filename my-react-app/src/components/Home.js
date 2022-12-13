@@ -1,6 +1,9 @@
 import React from "react";
 import axios from "axios";
 import "./styles.css";
+import NavBar from './NavBar';
+import {Helmet} from 'react-helmet';
+import { Link } from "react-router-dom";
 import { getUser } from "../store/user";
 
 const Home = () => {
@@ -35,6 +38,11 @@ const Home = () => {
     const events = JSON.parse(localStorage.getItem(key) || "[]");
     events.push(event);
     localStorage.setItem(key, JSON.stringify(events));
+  }
+
+  function showhide() {
+    var div = document.getElementById("newpost");
+    div.classList.toggle('hidden'); 
   }
 
   return (
