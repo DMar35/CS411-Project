@@ -4,6 +4,7 @@ import axios from "axios";
 import "./styles.css";
 import NavBar from './NavBar';
 import {Helmet} from 'react-helmet';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [query, setQuery] = React.useState("");
@@ -33,6 +34,11 @@ const Home = () => {
 
   function save() {
     alert('Event saved to your account!');
+  }
+
+  function showhide() {
+    var div = document.getElementById("newpost");
+    div.classList.toggle('hidden'); 
   }
 
   return (
@@ -83,7 +89,9 @@ const Home = () => {
           <div className="item" key={index}>
             <div style={{ display: "flex", width: "1000px", alignContent:"center"}}>
               <div className="eventName display-linebreak">
-                <a href={event.url} target="_blank">{event.name}</a>
+              <a href={event.url} target="_blank" rel="noreferrer">
+                  {event.name}
+              </a>
                 <button className="interestedButton" onClick={save}>Interested</button>
               </div>
             </div>

@@ -18,3 +18,6 @@ class EventTickets(models.Model):
 class EventInterests(models.Model):
     interestedUser = models.ForeignKey(User, on_delete=models.CASCADE),
     interestedEvent = models.ForeignKey(EventTickets, on_delete=models.CASCADE)
+
+class TicketData(models.Model):
+    ticketDetails = models.JSONField()
