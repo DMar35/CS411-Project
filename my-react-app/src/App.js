@@ -5,8 +5,9 @@ import Login from './components/Login';
 import Register from './components/Register';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import Account from './components/AccountPage';
 import TicketPage from "./components/TicketPage";
+import Interested from './components/Interested';
+import Spotify from './components/Spotify';
 
 export default function App() {
 	return (
@@ -18,8 +19,9 @@ export default function App() {
 					<Route path='/login' element={<Login />} />
 			 		<Route path='/register' element={<Register />} />
 					<Route path='/home' element={<Home />} />
-					<Route path='/account' element={<Account />} />
 					<Route path='/ticket/:eventId' element={<TicketPage/>}/>
+					<Route path='/interested' element={<Interested />} />
+					<Route path='/spotify' element={<Spotify />} />
 				</Routes> 
 			</div>
 		</BrowserRouter>
